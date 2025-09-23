@@ -1,0 +1,21 @@
+SENSORI A EFFETTO HALL (Allegro ACS781xLR)
+- differenza di potenziale conosciuta proprio come tensione di Hall.
+- i sensori a effetto Hall rilevano la presenza, l’intensità e la polarità di un campo magnetico ed emettono un segnale di uscita variabile in funzione di tali parametri.
+- In funzione del tipo di uscita, abbiamo sensori a effetto Hall digitali e analogici:
+. nei primi il segnale di uscita assume un valore digitale alto o basso (ad esempio, 0 V o 5 V), corrispondente alla presenza o assenza del campo magnetico/della polarità magnetica;
+. i secondi presentano un intervallo continuo di valori del segnale di uscita (ad esempio, 0-5 V o 4-20 mA) in funzione dell’intensità del campo magnetico rilevato.
+
+Quella voce si riferisce alle varianti del sensore ACS781 che SnapMagic ti propone:
+Unidirectional → misura solo correnti in una direzione (es. da + a –), con uscita che parte da 0 V fino a un massimo (tipicamente centrata vicino a 0,1 V).
+Bidirectional → misura correnti nei due sensi (positiva e negativa), con uscita centrata a metà della tensione di alimentazione (es. VCC/2 = 2,5 V per VCC=5 V).
+
+
+- 100 A continuous current package
+- 200 µΩ internal conductor resistance
+▪	3 to 3.6 V, single supply operation
+▪	120 kHz typical bandwidth
+- senses AC and DC currents
+- voltages up to 100V
+
+MOLTIPLICATORE ANALOGICO AD633
+
