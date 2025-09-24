@@ -19,3 +19,21 @@ Bidirectional → misura correnti nei due sensi (positiva e negativa), con uscit
 
 MOLTIPLICATORE ANALOGICO AD633
 
+
+
+OP AMP
+Rail-to-rail
+Vuol dire che l’op-amp è in grado di lavorare con segnali molto vicini ai limiti dell’alimentazione (“rails” = i due binari di alimentazione, tipicamente GND e VCC).
+Ci sono due aspetti:
+Rail-to-rail input → l’op-amp può ricevere in ingresso tensioni che arrivano quasi a GND e quasi a VCC.
+Rail-to-rail output → l’op-amp può portare in uscita una tensione che si avvicina molto a GND e a VCC.
+Se non fosse rail-to-rail, rischi che con alimentazione a 5 V l’op-amp non arrivi mai a 0 V o a 5 V ma si fermi (es. 0,5–4,5 V).
+Handle chosen rails
+Significa che l’op-amp deve essere compatibile con le tensioni di alimentazione che stai usando nel progetto.
+Esempio: se il tuo circuito funziona a 3,3 V o a 5 V, l’op-amp deve essere specificato per funzionare correttamente con quelle tensioni (non tutti lo fanno: alcuni richiedono ±12 V o più).
+In pratica
+Se il tuo sensore ACS781 fornisce un’uscita tra ~0,5 V e ~4,5 V con VCC=5 V, e tu vuoi amplificarla o condizionarla:
+Serve un op-amp alimentato a 5 V (o 3,3 V se la tua logica è a 3,3).
+Meglio che sia rail-to-rail in ingresso e uscita, così non rischi di perdere parte del segnale.
+
+
