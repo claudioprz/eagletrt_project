@@ -1,0 +1,138 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "LTC3202EMS_PBF" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 23.2156 9.1186 0.0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "LTC3202EMS_PBF" (id 1) (at 22.5806 6.5786 0.0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "LTC3202EMS_PBF:MSOP-10_MS" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Analog Devices" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "VENDOR" "LinearTech" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            The LTC3202 is a low noise, constant frequency charge pump DC/DC converter that uses fractional conversion to increase efficiency in white LED applications. The part can be used to produce a regulated voltage or current of up to 125mA from a 2.7V to 4.5V input. Low external parts count (two flying capacitors and two small bypass capacitors at VIN and VOUT) make the LTC3202 ideally suited for small, battery-powered applications. An internal 2-bit DAC allows LED current to be adjusted for LED brightness control. The LTC3202 also has thermal shutdown protection and can survive a continuous short-circuit from VOUT to GND. Built-in soft-start circuitry prevents excessive inrush current during start-up. High switching frequency enables the use of small external capacitors. A low current shutdown feature disconnects the load from VIN and reduces quiescent current to less than 1µA. The LTC3202 is available in the 10-pin MSOP and 3mm x 3mm DFN packages. Applications White LED Backlighting Programmable Boost Current Source\n                        \n" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "MSOP-10 Linear Technology" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/LTC3202EMS%23PBF/Analog+Devices/view-part/?ref=eda" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/LTC3202EMS%23PBF/Analog+Devices/view-part/?ref=snap" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "LTC3202EMS#PBF" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER_PART_NUMBER" "ltc3202ems" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "LTC3202EMS_PBF_0_0"
+      (polyline
+        (pts (xy 7.62 5.08) (xy 7.62 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 7.62 -15.24) (xy 48.26 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 48.26 -15.24) (xy 48.26 5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 48.26 5.08) (xy 7.62 5.08)) (stroke (width 0.1524))
+      )
+      (pin input line (at 0.0 0.0 0) (length 7.62)
+        (name "D1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at 0.0 -2.54 0) (length 7.62)
+        (name "FB"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin output line (at 0.0 -5.08 0) (length 7.62)
+        (name "VOUT"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at 0.0 -7.62 0) (length 7.62)
+        (name "VIN"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 0.0 -10.16 0) (length 7.62)
+        (name "GND"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 55.88 -10.16 180.0) (length 7.62)
+        (name "C2-"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 55.88 -7.62 180.0) (length 7.62)
+        (name "C1-"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "7"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 55.88 -5.08 180.0) (length 7.62)
+        (name "C1+"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 55.88 -2.54 180.0) (length 7.62)
+        (name "C2+"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "9"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin input line (at 55.88 0.0 180.0) (length 7.62)
+        (name "D0"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "10"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
