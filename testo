@@ -36,4 +36,9 @@ Se il tuo sensore ACS781 fornisce un’uscita tra ~0,5 V e ~4,5 V con VCC=5 V, e
 Serve un op-amp alimentato a 5 V (o 3,3 V se la tua logica è a 3,3).
 Meglio che sia rail-to-rail in ingresso e uscita, così non rischi di perdere parte del segnale.
 
+RELAY
+ Confermare che la tua alimentazione di ingresso sarà sempre ≥6.5 V e ≤36 V. 
+ Sommare i consumi: MCU + sensori + eventuali driver → devono stare ben sotto 1 A (meglio <0.8 A per margine).
 
+MOSFET
+MOSFET è utilizzato come interruttore e come amplificatore di tensione.
