@@ -43,4 +43,5 @@ RELAY
 MOSFET
 MOSFET è utilizzato come interruttore e come amplificatore di tensione.
 
-ciao
+"Condensatore di bypass" in inglese si traduce con bypass capacitor. Questo componente elettronico viene utilizzato per filtrare o deviare
+le correnti alternate (AC) da un segnale di corrente continua (DC), reindirizzando le componenti AC indesiderate a massa attraverso un percorso a bassa impedenza
