@@ -1,0 +1,44 @@
+SENSORI A EFFETTO HALL (Allegro ACS781xLR)
+- differenza di potenziale conosciuta proprio come tensione di Hall.
+- i sensori a effetto Hall rilevano la presenza, l’intensità e la polarità di un campo magnetico ed emettono un segnale di uscita variabile in funzione di tali parametri.
+- In funzione del tipo di uscita, abbiamo sensori a effetto Hall digitali e analogici:
+. nei primi il segnale di uscita assume un valore digitale alto o basso (ad esempio, 0 V o 5 V), corrispondente alla presenza o assenza del campo magnetico/della polarità magnetica;
+. i secondi presentano un intervallo continuo di valori del segnale di uscita (ad esempio, 0-5 V o 4-20 mA) in funzione dell’intensità del campo magnetico rilevato.
+
+Quella voce si riferisce alle varianti del sensore ACS781 che SnapMagic ti propone:
+Unidirectional → misura solo correnti in una direzione (es. da + a –), con uscita che parte da 0 V fino a un massimo (tipicamente centrata vicino a 0,1 V).
+Bidirectional → misura correnti nei due sensi (positiva e negativa), con uscita centrata a metà della tensione di alimentazione (es. VCC/2 = 2,5 V per VCC=5 V).
+
+
+- 100 A continuous current package
+- 200 µΩ internal conductor resistance
+▪	3 to 3.6 V, single supply operation
+▪	120 kHz typical bandwidth
+- senses AC and DC currents
+- voltages up to 100V
+
+MOLTIPLICATORE ANALOGICO AD633
+
+
+
+OP AMP
+Rail-to-rail
+Vuol dire che l’op-amp è in grado di lavorare con segnali molto vicini ai limiti dell’alimentazione (“rails” = i due binari di alimentazione, tipicamente GND e VCC).
+Ci sono due aspetti:
+Rail-to-rail input → l’op-amp può ricevere in ingresso tensioni che arrivano quasi a GND e quasi a VCC.
+Rail-to-rail output → l’op-amp può portare in uscita una tensione che si avvicina molto a GND e a VCC.
+Se non fosse rail-to-rail, rischi che con alimentazione a 5 V l’op-amp non arrivi mai a 0 V o a 5 V ma si fermi (es. 0,5–4,5 V).
+Handle chosen rails
+Significa che l’op-amp deve essere compatibile con le tensioni di alimentazione che stai usando nel progetto.
+Esempio: se il tuo circuito funziona a 3,3 V o a 5 V, l’op-amp deve essere specificato per funzionare correttamente con quelle tensioni (non tutti lo fanno: alcuni richiedono ±12 V o più).
+In pratica
+Se il tuo sensore ACS781 fornisce un’uscita tra ~0,5 V e ~4,5 V con VCC=5 V, e tu vuoi amplificarla o condizionarla:
+Serve un op-amp alimentato a 5 V (o 3,3 V se la tua logica è a 3,3).
+Meglio che sia rail-to-rail in ingresso e uscita, così non rischi di perdere parte del segnale.
+
+RELAY
+ Confermare che la tua alimentazione di ingresso sarà sempre ≥6.5 V e ≤36 V. 
+ Sommare i consumi: MCU + sensori + eventuali driver → devono stare ben sotto 1 A (meglio <0.8 A per margine).
+
+MOSFET
+MOSFET è utilizzato come interruttore e come amplificatore di tensione.
